@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Parking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="http://www.yellowhaven.com/images/1024px-Parking_icon.svg-copy.png" alt="logo">
+            </a>
+            <a href="#">PARK</a>
+            <a href="#" style="color:white;">VEHI</a>
+        </div>
+    </div>
+    <div class="signup-container">
+        <button type="button" class="close-button" onclick="window.location.href='../index.html'">&times;</button>
+        <h2>Signup for Parking System</h2>
+        <form action="signup.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a valid 10-digit phone number">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="6" required>
+            </div>
+            <div class="form-group">
+                <label for="vehicle">Vehicle Type</label>
+                <select id="vehicle" name="vehicle" required>
+                    <option value="">Select your vehicle type</option>
+                    <option value="car">Car</option>
+                    <option value="motorcycle">Motorcycle</option>
+                    <option value="truck">Truck</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <div class="form-group terms-condition">
+                <input type="checkbox" name="terms" required>
+                <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

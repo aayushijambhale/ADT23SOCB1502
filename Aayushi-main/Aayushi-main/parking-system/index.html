@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkVehi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img class="background-image"
+            src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2019/08/dark-parking-lot.jpg"
+            alt="Parking lot background">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="http://www.yellowhaven.com/images/1024px-Parking_icon.svg-copy.png" alt="logo">
+                </a>
+                <a href="#">PARK</a>
+                <a href="#" style="color:white;">VEHI</a>
+            </div>
+            <div class="menu">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="plan.html">Plan</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="btn-group">
+                        <a class="login-btn" href="login/login.html">Log in</a>
+                        <a class="login-btn" href="signup/signup.html">Sign In</a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-container">
+                <h2>Welcome To </h2>
+                <br>
+                <a href="#">
+                    <span style="color: yellow;">PARK</span>
+                    <span style="color:white;">VEHI</span>
+                </a>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cum libero quaerat, alias tempore
+                    ab quod magni amet repellat deserunt similique veritatis omnis quidem doloribus natus perferendis
+                    est, iste autem.</p>
+                <div class="btn-group">
+                    <a class="book-now" href="login/login.html">Book Now</a>
+                </div>
+            </div>
+            <div class="right-container">
+                <h3>Parking Form</h3>
+                <form id="parking-form">
+                    <div class="form-container">
+                        <div>
+                            <label for="location">Location</label>
+                            <select id="location" name="location">
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="kolkata">Kolkata</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="pune">Pune</option>
+                                <option value="ahmedabad">Ahmedabad</option>
+                                <option value="jaipur">Jaipur</option>
+                                <option value="kochi">Kochi</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="checkin-date">CHECK IN</label>
+                            <input id="checkin-date" type="date" required />
+                        </div>
+                        <div>
+                            <label for="checkin-time">CHECK IN TIME</label>
+                            <select id="checkin-time" required>
+                                <option value="">Select time</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">01:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="17:00">05:00 PM</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="checkout-date">CHECK OUT</label>
+                            <input id="checkout-date" type="date" required />
+                        </div>
+                        <div>
+                            <label for="checkout-time">CHECK OUT TIME</label>
+                            <select id="checkout-time" required>
+                                <option value="">Select time</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">01:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="17:00">05:00 PM</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="promo-code">PROMO CODE (optional)</label>
+                            <input id="promo-code" type="text" />
+                        </div>
+                        <div>
+                            <button type="submit" class="book-now-btn">Book Now</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="summary" style="display:none;">
+                    <h4>Booking Summary</h4>
+                    <p id="summary-details"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

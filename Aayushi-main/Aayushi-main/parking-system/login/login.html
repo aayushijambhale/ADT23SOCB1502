@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Parking System</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="http://www.yellowhaven.com/images/1024px-Parking_icon.svg-copy.png" alt="logo">
+            </a>
+            <a href="#">PARK</a>
+            <a href="#" style="color:white;">VEHI</a>
+        </div>
+    </div>
+    <div class="login-container">
+        <button type="button" class="close-button" onclick="window.location.href='/parking-system/index.html'">&times;</button>
+        <h2>Login to Parking System</h2>
+        <form action="submit.php" method="POST">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Log In">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
